@@ -1,4 +1,4 @@
-from django_filters.rest_framework import DjangoFilterBackend
+# from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.decorators import api_view
 from django.http import HttpResponse
 from rest_framework.filters import SearchFilter
@@ -31,4 +31,4 @@ class StockViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def sample_view(request):
-    return Response({'message': 'Hello Students, Deploy Success'})
+    return Response({'message': 'Hello, Deploy Success'})
