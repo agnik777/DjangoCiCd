@@ -19,11 +19,11 @@ jobs:
       DB_PORT: ${{ secrets.DB_PORT }}
     services:
       postgresql_main:
-        image: postgresql:12
+        image: postgres:12
         env:
-          POSTGRESQL_DB: ${{ env.DB_NAME }}
-          POSTGRESQL_USER: ${{ env.DB_USER }}
-          POSTGRESQL_PASSWORD: ${{ env.DB_PASSWORD }}
+          POSTGRES_DB: ${{ env.DB_NAME }}
+          POSTGRES_USER: ${{ env.DB_USER }}
+          POSTGRES_PASSWORD: ${{ env.DB_PASSWORD }}
         ports:
           - 5432:5432
         options:
